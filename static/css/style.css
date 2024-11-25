@@ -3,33 +3,36 @@ body {
   color: #0f0;
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
-#title {
+h1 {
   text-align: center;
-  margin: 20px 0;
-  font-size: 3em;
+  color: #0f0;
+  margin-bottom: 20px;
 }
 
-#body {
-  margin: 20px auto;
+#terminal {
   width: 80%;
-  max-width: 600px;
-}
-
-.PS1 {
-  color: #0a0;
-  font-weight: bold;
-  margin-top: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #111;
+  border: 1px solid #0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #0f0;
 }
 
 .prompt {
-  color: #0f0;
+  color: #0a0;
+}
+
+.command {
+  color: #fff;
 }
 
 .output {
-  margin: 10px 0;
+  margin-left: 20px;
 }
 
 .output-line a {
@@ -41,13 +44,42 @@ body {
   text-decoration: underline;
 }
 
-.prompt.last {
-  color: #0f0;
+.cursor {
+  font-weight: bold;
+}
+
+.blinking {
   animation: blink 1s step-start infinite;
 }
 
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+.animated-command {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #0f0;
   }
 }
