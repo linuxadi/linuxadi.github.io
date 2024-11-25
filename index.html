@@ -1,46 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Singh - Bughunter</title>
   <link rel="stylesheet" href="static/css/style.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-  <h1 id="title">Aditya singh</h1>
+  <h1 id="title">Aditya Singh</h1>
 
-  <div id="body">
-    <div class="PS1">┌─[root@Kali]─[~]
-└──╼ #
-</div>
-    <div class="prompt"># ls -1 links/</div>
-
+  <div id="terminal">
+    <div class="line">
+      <span class="prompt">┌─[root@Kali]─[~]</span>
+    </div>
+    <div class="line">
+      <span class="prompt">└──╼ #</span> <span class="command animated-command">ls -1 links/</span>
+    </div>
     <div class="output">
-      <div class="output-line"><a href="https://linkedin.com/in/aditya-singh4180">LinkedIn</a></div>
-      <div class="output-line"><a href="https://github.com/linuxadi">GitHub</a></div>
+      <div class="output-line"><a href="https://linkedin.com/in/aditya-singh4180" target="_blank">LinkedIn</a></div>
+      <div class="output-line"><a href="https://github.com/linuxadi" target="_blank">GitHub</a></div>
       <div class="output-line"><a href="mailto:biskuit8520@yandex.com">Email</a></div>
     </div>
 
-    <div class="PS1">┌─[root@Kali]─[~]
-└──╼ #</div>
-    <div class="prompt"># cat about.txt</div>
-
+    <div class="line">
+      <span class="prompt">┌─[root@Kali]─[~]</span>
+    </div>
+    <div class="line">
+      <span class="prompt">└──╼ #</span> <span class="command animated-command">cat about.txt</span>
+    </div>
     <div class="output">
-      <div class="output-line">Hi, my name is Aditya singh. I am a Bughunter.
-        Feel free to explore my work below or contact me through the links above.
+      <div class="output-line">Hello! My name is <strong>Aditya Singh</strong>. I am a passionate <strong>Bug Hunter</strong> and a tech enthusiast. 
+        I love exploring vulnerabilities, solving problems, and learning new technologies. Feel free to connect through the links above.
       </div>
     </div>
 
-    <div class="PS1">┌─[root@Kali]─[~]
-└──╼ # </div>
-    <div class="prompt">ls /</div>
-
+    <div class="line">
+      <span class="prompt">┌─[root@Kali]─[~]</span>
+    </div>
+    <div class="line">
+      <span class="prompt">└──╼ #</span> <span class="command animated-command">ls /</span>
+    </div>
     <div class="output">
-      <div class="output-line"><a href="https://linktr.ee/biskuit4180">Linktr.ee</a></div>
-         </div>
+      <div class="output-line"><a href="https://linktr.ee/biskuit4180" target="_blank">Linktr.ee</a></div>
+    </div>
 
-    <div class="PS1">[linuxadi$]</div>
-    <div class="prompt last">&#9612;</div>
+    <div class="line">
+      <span class="prompt">[linuxadi$]</span> <span class="cursor blinking">█</span>
+    </div>
   </div>
 
   <script src="static/js/home.js"></script>
